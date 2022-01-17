@@ -3,12 +3,12 @@
 /* BEGIN: Cython Metadata
 {
     "distutils": {
-        "name": "primes",
+        "name": "primes_cython",
         "sources": [
-            "primes.pyx"
+            "primes_cython.pyx"
         ]
     },
-    "module_name": "primes"
+    "module_name": "primes_cython"
 }
 END: Cython Metadata */
 
@@ -685,8 +685,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__primes
-#define __PYX_HAVE_API__primes
+#define __PYX_HAVE__primes_cython
+#define __PYX_HAVE_API__primes_cython
 /* Early includes */
 #ifdef _OPENMP
 #include <omp.h>
@@ -897,7 +897,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "primes.pyx",
+  "primes_cython.pyx",
 };
 
 /*--- Type declarations ---*/
@@ -1118,12 +1118,12 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'primes' */
-#define __Pyx_MODULE_NAME "primes"
-extern int __pyx_module_is_main_primes;
-int __pyx_module_is_main_primes = 0;
+/* Module declarations from 'primes_cython' */
+#define __Pyx_MODULE_NAME "primes_cython"
+extern int __pyx_module_is_main_primes_cython;
+int __pyx_module_is_main_primes_cython = 0;
 
-/* Implementation of 'primes' */
+/* Implementation of 'primes_cython' */
 static const char __pyx_k_i[] = "i";
 static const char __pyx_k_n[] = "n";
 static const char __pyx_k_p[] = "p";
@@ -1134,8 +1134,9 @@ static const char __pyx_k_len_p[] = "len_p";
 static const char __pyx_k_prime[] = "prime";
 static const char __pyx_k_primes[] = "primes";
 static const char __pyx_k_nb_primes[] = "nb_primes";
-static const char __pyx_k_primes_pyx[] = "primes.pyx";
+static const char __pyx_k_primes_cython[] = "primes_cython";
 static const char __pyx_k_result_as_list[] = "result_as_list";
+static const char __pyx_k_primes_cython_pyx[] = "primes_cython.pyx";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_i;
@@ -1147,24 +1148,25 @@ static PyObject *__pyx_n_s_nb_primes;
 static PyObject *__pyx_n_s_p;
 static PyObject *__pyx_n_s_prime;
 static PyObject *__pyx_n_s_primes;
-static PyObject *__pyx_kp_s_primes_pyx;
+static PyObject *__pyx_n_s_primes_cython;
+static PyObject *__pyx_kp_s_primes_cython_pyx;
 static PyObject *__pyx_n_s_result_as_list;
 static PyObject *__pyx_n_s_test;
-static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_nb_primes); /* proto */
+static PyObject *__pyx_pf_13primes_cython_primes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_nb_primes); /* proto */
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_codeobj__2;
 /* Late includes */
 
-/* "primes.pyx":1
+/* "primes_cython.pyx":1
  * def primes(int nb_primes):             # <<<<<<<<<<<<<<
  *     cdef int n, i, len_p
  *     cdef int p[1000]
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6primes_1primes(PyObject *__pyx_self, PyObject *__pyx_arg_nb_primes); /*proto*/
-static PyMethodDef __pyx_mdef_6primes_1primes = {"primes", (PyCFunction)__pyx_pw_6primes_1primes, METH_O, 0};
-static PyObject *__pyx_pw_6primes_1primes(PyObject *__pyx_self, PyObject *__pyx_arg_nb_primes) {
+static PyObject *__pyx_pw_13primes_cython_1primes(PyObject *__pyx_self, PyObject *__pyx_arg_nb_primes); /*proto*/
+static PyMethodDef __pyx_mdef_13primes_cython_1primes = {"primes", (PyCFunction)__pyx_pw_13primes_cython_1primes, METH_O, 0};
+static PyObject *__pyx_pw_13primes_cython_1primes(PyObject *__pyx_self, PyObject *__pyx_arg_nb_primes) {
   int __pyx_v_nb_primes;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -1177,18 +1179,18 @@ static PyObject *__pyx_pw_6primes_1primes(PyObject *__pyx_self, PyObject *__pyx_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("primes.primes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("primes_cython.primes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_6primes_primes(__pyx_self, ((int)__pyx_v_nb_primes));
+  __pyx_r = __pyx_pf_13primes_cython_primes(__pyx_self, ((int)__pyx_v_nb_primes));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_nb_primes) {
+static PyObject *__pyx_pf_13primes_cython_primes(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_nb_primes) {
   int __pyx_v_n;
   int __pyx_v_i;
   int __pyx_v_len_p;
@@ -1208,7 +1210,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("primes", 0);
 
-  /* "primes.pyx":5
+  /* "primes_cython.pyx":5
  *     cdef int p[1000]
  * 
  *     if nb_primes > 1000:             # <<<<<<<<<<<<<<
@@ -1218,7 +1220,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
   __pyx_t_1 = ((__pyx_v_nb_primes > 0x3E8) != 0);
   if (__pyx_t_1) {
 
-    /* "primes.pyx":6
+    /* "primes_cython.pyx":6
  * 
  *     if nb_primes > 1000:
  *         nb_primes = 1000             # <<<<<<<<<<<<<<
@@ -1227,7 +1229,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
  */
     __pyx_v_nb_primes = 0x3E8;
 
-    /* "primes.pyx":5
+    /* "primes_cython.pyx":5
  *     cdef int p[1000]
  * 
  *     if nb_primes > 1000:             # <<<<<<<<<<<<<<
@@ -1236,7 +1238,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
  */
   }
 
-  /* "primes.pyx":11
+  /* "primes_cython.pyx":11
  * 
  * 
  *     len_p = 0  # The current number of elements in p.             # <<<<<<<<<<<<<<
@@ -1245,7 +1247,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
  */
   __pyx_v_len_p = 0;
 
-  /* "primes.pyx":12
+  /* "primes_cython.pyx":12
  * 
  *     len_p = 0  # The current number of elements in p.
  *     n = 2             # <<<<<<<<<<<<<<
@@ -1254,7 +1256,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
  */
   __pyx_v_n = 2;
 
-  /* "primes.pyx":13
+  /* "primes_cython.pyx":13
  *     len_p = 0  # The current number of elements in p.
  *     n = 2
  *     while len_p < nb_primes:             # <<<<<<<<<<<<<<
@@ -1265,7 +1267,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
     __pyx_t_1 = ((__pyx_v_len_p < __pyx_v_nb_primes) != 0);
     if (!__pyx_t_1) break;
 
-    /* "primes.pyx":15
+    /* "primes_cython.pyx":15
  *     while len_p < nb_primes:
  *         # Is n prime?
  *         for i in p[:len_p]:             # <<<<<<<<<<<<<<
@@ -1277,7 +1279,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
       __pyx_t_2 = __pyx_t_4;
       __pyx_v_i = (__pyx_t_2[0]);
 
-      /* "primes.pyx":16
+      /* "primes_cython.pyx":16
  *         # Is n prime?
  *         for i in p[:len_p]:
  *             if n % i == 0:             # <<<<<<<<<<<<<<
@@ -1291,7 +1293,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
       __pyx_t_1 = ((__Pyx_mod_int(__pyx_v_n, __pyx_v_i) == 0) != 0);
       if (__pyx_t_1) {
 
-        /* "primes.pyx":17
+        /* "primes_cython.pyx":17
  *         for i in p[:len_p]:
  *             if n % i == 0:
  *                 break             # <<<<<<<<<<<<<<
@@ -1300,7 +1302,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
  */
         goto __pyx_L7_break;
 
-        /* "primes.pyx":16
+        /* "primes_cython.pyx":16
  *         # Is n prime?
  *         for i in p[:len_p]:
  *             if n % i == 0:             # <<<<<<<<<<<<<<
@@ -1311,7 +1313,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
     }
     /*else*/ {
 
-      /* "primes.pyx":21
+      /* "primes_cython.pyx":21
  *         # If no break occurred in the loop, we have a prime.
  *         else:
  *             p[len_p] = n             # <<<<<<<<<<<<<<
@@ -1320,7 +1322,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
  */
       (__pyx_v_p[__pyx_v_len_p]) = __pyx_v_n;
 
-      /* "primes.pyx":22
+      /* "primes_cython.pyx":22
  *         else:
  *             p[len_p] = n
  *             len_p += 1             # <<<<<<<<<<<<<<
@@ -1331,7 +1333,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
     }
     __pyx_L7_break:;
 
-    /* "primes.pyx":23
+    /* "primes_cython.pyx":23
  *             p[len_p] = n
  *             len_p += 1
  *         n += 1             # <<<<<<<<<<<<<<
@@ -1341,7 +1343,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
     __pyx_v_n = (__pyx_v_n + 1);
   }
 
-  /* "primes.pyx":26
+  /* "primes_cython.pyx":26
  * 
  *     # Let's copy the result into a Python list:
  *     result_as_list = [prime for prime in p[:len_p]]             # <<<<<<<<<<<<<<
@@ -1361,7 +1363,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
   __pyx_v_result_as_list = ((PyObject*)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "primes.pyx":27
+  /* "primes_cython.pyx":27
  *     # Let's copy the result into a Python list:
  *     result_as_list = [prime for prime in p[:len_p]]
  *     return result_as_list             # <<<<<<<<<<<<<<
@@ -1371,7 +1373,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
   __pyx_r = __pyx_v_result_as_list;
   goto __pyx_L0;
 
-  /* "primes.pyx":1
+  /* "primes_cython.pyx":1
  * def primes(int nb_primes):             # <<<<<<<<<<<<<<
  *     cdef int n, i, len_p
  *     cdef int p[1000]
@@ -1381,7 +1383,7 @@ static PyObject *__pyx_pf_6primes_primes(CYTHON_UNUSED PyObject *__pyx_self, int
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("primes.primes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("primes_cython.primes", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_result_as_list);
@@ -1397,17 +1399,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_primes(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_primes_cython(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_primes},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_primes_cython},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "primes",
+    "primes_cython",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -1446,7 +1448,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_p, __pyx_k_p, sizeof(__pyx_k_p), 0, 0, 1, 1},
   {&__pyx_n_s_prime, __pyx_k_prime, sizeof(__pyx_k_prime), 0, 0, 1, 1},
   {&__pyx_n_s_primes, __pyx_k_primes, sizeof(__pyx_k_primes), 0, 0, 1, 1},
-  {&__pyx_kp_s_primes_pyx, __pyx_k_primes_pyx, sizeof(__pyx_k_primes_pyx), 0, 0, 1, 0},
+  {&__pyx_n_s_primes_cython, __pyx_k_primes_cython, sizeof(__pyx_k_primes_cython), 0, 0, 1, 1},
+  {&__pyx_kp_s_primes_cython_pyx, __pyx_k_primes_cython_pyx, sizeof(__pyx_k_primes_cython_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_result_as_list, __pyx_k_result_as_list, sizeof(__pyx_k_result_as_list), 0, 0, 1, 1},
   {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 0, 0}
@@ -1459,7 +1462,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "primes.pyx":1
+  /* "primes_cython.pyx":1
  * def primes(int nb_primes):             # <<<<<<<<<<<<<<
  *     cdef int n, i, len_p
  *     cdef int p[1000]
@@ -1467,7 +1470,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple_ = PyTuple_Pack(8, __pyx_n_s_nb_primes, __pyx_n_s_nb_primes, __pyx_n_s_n, __pyx_n_s_i, __pyx_n_s_len_p, __pyx_n_s_p, __pyx_n_s_result_as_list, __pyx_n_s_prime); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_primes_pyx, __pyx_n_s_primes, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(1, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_primes_cython_pyx, __pyx_n_s_primes, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -1565,11 +1568,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initprimes(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initprimes(void)
+__Pyx_PyMODINIT_FUNC initprimes_cython(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initprimes_cython(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_primes(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_primes(void)
+__Pyx_PyMODINIT_FUNC PyInit_primes_cython(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_primes_cython(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -1636,7 +1639,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_primes(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_primes_cython(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -1648,7 +1651,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_primes(PyObject *__pyx_pyinit_modu
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'primes' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'primes_cython' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -1663,7 +1666,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_primes(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_primes_cython(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -1700,7 +1703,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("primes", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("primes_cython", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -1718,14 +1721,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_primes) {
+  if (__pyx_module_is_main_primes_cython) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "primes")) {
-      if (unlikely(PyDict_SetItemString(modules, "primes", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "primes_cython")) {
+      if (unlikely(PyDict_SetItemString(modules, "primes_cython", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -1746,12 +1749,12 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "primes.pyx":1
+  /* "primes_cython.pyx":1
  * def primes(int nb_primes):             # <<<<<<<<<<<<<<
  *     cdef int n, i, len_p
  *     cdef int p[1000]
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_6primes_1primes, NULL, __pyx_n_s_primes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_13primes_cython_1primes, NULL, __pyx_n_s_primes_cython); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_primes, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -1767,11 +1770,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init primes", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init primes_cython", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init primes");
+    PyErr_SetString(PyExc_ImportError, "init primes_cython");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
